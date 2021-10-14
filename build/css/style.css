@@ -4,21 +4,19 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-h1, h2, h3, h4, p {
-    margin: 0;
-    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
+ul, ol {
+    list-style: none;
 }
