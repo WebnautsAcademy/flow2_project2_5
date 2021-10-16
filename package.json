@@ -1,0 +1,27 @@
+{
+  "name": "flow2_project2_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp watch",
+    "gulp": "gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianRazor/flow2_project2_5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianRazor/flow2_project2_5/issues"
+  },
+  "homepage": "https://github.com/AdrianRazor/flow2_project2_5#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.5"
+  }
+}
