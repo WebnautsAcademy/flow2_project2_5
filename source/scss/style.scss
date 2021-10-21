@@ -5,27 +5,8 @@
 @import './blocks/header.scss';
 @import './blocks/logo.scss';
 @import './blocks/nav.scss';
-@import './blocks/theme-toggle.scss';
+@import './blocks/theme-toggler.scss';
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-p {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul, ol {
-    list-style: none;
-}
+@import './blocks/about.scss';
+@import './blocks/name-container.scss';
+@import './blocks/text-container.scss';

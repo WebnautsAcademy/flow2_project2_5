@@ -5,8 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp watch",
-    "gulp": "gulp css"
+    "css": "gulp css",
+    "html": "gulp html",
+    "copy": "gulp copy",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,14 @@
   },
   "homepage": "https://github.com/AdrianRazor/flow2_project2_5#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.43.2"
   },
   "dependencies": {
     "browser-sync": "^2.27.5"
