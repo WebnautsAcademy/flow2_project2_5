@@ -1,14 +1,15 @@
-.text {
-    font-family: 'SF Pro Display', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
 .text__img {
     width: 345px;
     height: 100%;
     margin-top: 40px;
+}
+
+@media (min-width: 1220px) {
+    .about-text-container {
+        flex-basis: 50%;
+    }
+    .text__img {
+        width: 615px;
+        height: 396px;
+    }
 }

@@ -53,3 +53,36 @@
     top: 12px;
     left: -165px;
 }
+
+@media (min-width: 1220px) {
+    .title {
+        font-size: 190px;
+        line-height: 170px;
+        top: 100px;
+    }
+    .title--stroke {
+        font-size: 190px;
+        -webkit-text-stroke-width: 2px;
+    }
+    .title--shadow {
+        text-shadow: 5px 5px 0px #83C1FA;
+    }
+    .welcome-title-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .welcome-text::before {
+        width: 253px;
+        left: 0;
+    }
+    .welcome-text {
+        margin-left: 0;
+        padding-left: 280px;
+        padding-right: 50px;
+    }
+    .welcome-img {
+        width: 608px;
+        margin-bottom: 0;
+        box-shadow: 8px 7px 0 #83C1FA;
+    }
+}

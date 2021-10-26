@@ -13,7 +13,42 @@ body {
 }
 
 .wrapper {
+    position: relative;
     max-width: 345px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.wrapper--line::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 345px;
+    height: 1px;
+    background-color: #C4C4C4;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+@media (min-width: 1220px) {
+    .wrapper {
+        max-width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .wrapper--line::before {
+        width: 1200px;
+    }
+    .text {
+        line-height: 24px;
+    }
 }

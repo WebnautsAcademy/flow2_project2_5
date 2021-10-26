@@ -1,3 +1,10 @@
 .welcome__wrapper {
     padding-bottom: 110px;
 }
+
+@media (min-width: 1220px) {
+    .welcome__wrapper {
+        padding-bottom: 220px;
+        padding-top: 220px;
+    }
+}
