@@ -8,6 +8,7 @@
     "css": "gulp css",
     "html": "gulp html",
     "copy": "gulp copy",
+    "clean": "gulp clean",
     "start": "gulp watch"
   },
   "repository": {

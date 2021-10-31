@@ -8,21 +8,29 @@
 </head>
 <body>
     <header class="header">
-        <!-- <div class="header__wrapper">
+        <div class="header__wrapper wrapper">
             <a href="#" class="logo">
-                <img src="" alt="Logo Fro">
+                <svg class="logo__fro" width="27" height="12">
+                    <use xlink:href="img/sprite.svg#logo-fro"></use>
+                </svg>
+                <svg class="logo__heart" width="12" height="12">
+                    <use xlink:href="img/sprite.svg#logo-heart"></use>
+                </svg>
             </a>
-            <button class="theme-toggler">
-                <span>Переключить тему</span>
-                <img class="theme-toggler__icon" src="#" alt="">
+            <button class="header__theme-toggler">
+                <span class="visually-hidden">Переключить тему</span>
+                <svg class="header__theme-icon" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#theme-toggler"></use>
+                </svg>
             </button>
-            <nav class="nav">
-                <button class="nav__toggle-menu">
-                    <span>Переключить меню</span>
-                </button>
+            <button class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="visually-hidden">Меню</span>
+            </button>
+            <nav class="nav nav--shown">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Обо мне</a>
+                        <a href="#about" class="nav__link">Обо мне</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Мои проекты</a>
@@ -31,9 +39,11 @@
                         <a href="#" class="nav__link">Отзывы</a>
                     </li>
                 </ul>
-                <button class="nav__connect">Связаться со мной</button>
+                <a class="nav__contact" href="tel:+89202523">
+                    <div class="nav__contact-btn">Связаться со мной</div>
+                </a>
             </nav>
-        </div> -->
+        </div>
     </header>
     <section class="welcome">
         <div class="welcome__wrapper wrapper">
@@ -47,7 +57,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="about__wrapper wrapper wrapper--line">
             <div class="about-name-container">
                 <h2 class="name">ОБО МНЕ</h2>
@@ -58,28 +68,39 @@
                 <img class="text__img" src="./img/about-img.jpg" alt="Man with laptop">
             </div>
         </div>
-        <div class="about-text-bg">
+        <!-- <div class="about-text-bg">
             <div class="about-text-bg__item">Подниму бизнес с нуля&ensp;Подниму бизнес с нуля&ensp;Подниму бизнес с нуля&ensp;Подниму бизнес с нуля</div>
             <div class="about-text-bg__item">&ensp;Подниму бизнес с нуля&ensp;Подниму бизнес с нуля&ensp;Подниму бизнес с нуля&ensp;Подниму бизнес с нуля</div>
             <div class="about-text-bg__item">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Подниму бизнес с нуля&ensp;Подниму бизнес с нуля&ensp;Подниму бизнес с нуля</div>
-        </div>
+        </div> -->
     </section>
     <section class="special">
         <div class="special__wrapper wrapper wrapper--line">
-            <div class="name-container">
-                <h2 class="name">Основные специализации</h2>
-            </div>
-            <div class="spoiler__list-container">
-                <ol class="spoiler__list">
-                    <li class="spoiler__item">Увеличение продаж</li>
-                    <li class="spoiler__item">Повышение узнаваемости</li>
-                    <li class="spoiler__item">Расширение компании</li>
-                    <li class="spoiler__item">Что-то еще</li>
-                    <li class="spoiler__item">Еще что-то</li>
-                    <li class="spoiler__item">Что-то еще</li>
-                </ol>
+            <h2 class="name name--mb">Основные специализации</h2>
+            <div class="spoiler">
+                <div class="spoiler__item">
+                    <div class="spoiler__name-block">
+                        <p class="spoiler__name">
+                            <span class="spoiler__number">01</span>
+                            Увеличение продаж
+                        </p>
+                        <div class="spoiler__arrow"></div>
+                    </div>
+                    <p class="text spoiler__text spoiler--active">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз.</p>
+                </div>
+                <div class="spoiler__item">
+                    <div class="spoiler__name-block">
+                        <p class="spoiler__name">
+                            <span class="spoiler__number">02</span>
+                            Повышение узнаваемости
+                        </p>
+                        <div class="spoiler__arrow"></div>
+                    </div>
+                    <p class="spoiler__text text">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз.</p>
+                </div>
             </div>
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
