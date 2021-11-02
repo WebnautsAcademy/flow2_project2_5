@@ -6,24 +6,13 @@ var nav = document.querySelector('.nav')
 var closeNav = document.querySelector('.header__burger-line')
 
 if (burger) {
-    burger.addEventListener(
+    burger.addEventListener (
         'click',
         function () {
             nav.classList.toggle('nav--shown')
             closeNav.classList.toggle('header__burger-x-icon')
         }
     )
-}
-
-// Ссылки в бургер меню
-var link = document.querySelectorAll('nav__link')
-
-link.forEach(function(close) {
-    close.addEventListener ('click', closeClick)
-})
-
-function closeClick () {
-    nav.classList.add('nav--shown')
 }
 
 
@@ -36,4 +25,14 @@ spoiler.forEach(function(item) {
 
 function itemClick () {
     this.nextElementSibling.classList.toggle('spoiler--active')
+}
+
+var spoilerHover = document.querySelectorAll('.spoiler__name-block')
+
+spoilerHover.forEach(function(itemHover) {
+    itemHover.addEventListener ('click', itemHoverClick)
+})
+
+function itemHoverClick () {
+    this.classList.toggle('spoiler--open')
 }

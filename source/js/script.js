@@ -15,29 +15,6 @@ if (burger) {
     )
 }
 
-// Ссылки в бургер меню
-// var link = document.querySelectorAll('nav__link')
-
-// if (link) {
-//     link.addEventListener (
-//         'click',
-//         function () {
-//             nav.classList.add('nav--shown')
-//         }
-//     )
-// }
-
-// Ссылки в бургер меню
-// var link = document.querySelectorAll('nav__link')
-
-// link.forEach(function(close) {
-//     close.addEventListener ('click', closeClick)
-// })
-
-// function closeClick () {
-//     nav.classList.add('nav--shown')
-// }
-
 
 // Спойлер в секции "Основные специализации"
 var spoiler = document.querySelectorAll('.spoiler__name-block')
@@ -48,4 +25,14 @@ spoiler.forEach(function(item) {
 
 function itemClick () {
     this.nextElementSibling.classList.toggle('spoiler--active')
+}
+
+var spoilerHover = document.querySelectorAll('.spoiler__name-block')
+
+spoilerHover.forEach(function(itemHover) {
+    itemHover.addEventListener ('click', itemHoverClick)
+})
+
+function itemHoverClick () {
+    this.classList.toggle('spoiler--open')
 }

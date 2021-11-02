@@ -14,21 +14,23 @@
     text-transform: uppercase;
     color: #FFFFFF;
 
-    position: absolute;
-    top: 15px;
-    left: 0;
-}
+    &--stroke {
+        text-shadow: none;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #8e8e8e;
+        color: transparent;
+        font-size: 67px;
+    }
 
-.title--stroke {
-    text-shadow: none;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #8e8e8e;
-    color: transparent;
-    font-size: 67px;
-}
+    &--shadow {
+        text-shadow: 3px 2px 0px #83C1FA;
+    }
 
-.title--shadow {
-    text-shadow: 3px 2px 0px #83C1FA;
+    &--poa {
+        position: absolute;
+        top: 15px;
+        left: 0;
+    }
 }
 
 .welcome-img {
@@ -59,14 +61,16 @@
         font-size: 190px;
         line-height: 170px;
         top: 100px;
+
+        &--stroke {
+            font-size: 190px;
+            -webkit-text-stroke-width: 2px;
+        }
+        &--shadow {
+            text-shadow: 5px 5px 0px #83C1FA;
+        }
     }
-    .title--stroke {
-        font-size: 190px;
-        -webkit-text-stroke-width: 2px;
-    }
-    .title--shadow {
-        text-shadow: 5px 5px 0px #83C1FA;
-    }
+
     .welcome-title-container {
         flex-direction: row-reverse;
         justify-content: space-between;

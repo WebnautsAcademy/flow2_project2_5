@@ -4,6 +4,7 @@
         width: 100%;
         height: 60px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transition: 0.3s;
 
         display: flex;
         justify-content: space-between;
@@ -30,6 +31,7 @@
         font-size: 20px;
         line-height: 24px;
         color: #fff;
+        transition: 0.3s;
     }
 
     &__arrow {
@@ -52,6 +54,8 @@
         top: 50%;
         margin-top: -1px;
         left: 50%;
+
+        transition: 0.3s;
     }
 
     &__arrow::before {
@@ -64,12 +68,50 @@
         transform: rotate(-45deg);
     }
 
-    &__text {   
-        padding: 25px 0;
-        transition: all 0.3s ease 0.3s;
+    &__text-block {
+        padding: 25px 0 5px 0;
+        height: auto;
+        transition: 0.3s;
     }
 
+    // Стили для активного спойлера
+    &--open {
+        border-bottom: 1px solid #83C1FA;
+        transition: 0.3s;
+    }
+
+    &--open p {
+        color: #83C1FA;
+        transition: 0.3s;
+    }
+
+    &--open span {
+        color: #4F4F4F;
+    }
+
+    &--open div::after {
+        background-color: #83C1FA;
+        transform: rotate(45deg);
+        transition: 0.3s;
+    }
+
+    &--open div::before {
+        background-color: #83C1FA;
+        transform: rotate(-45deg);
+        transition: 0.3s;
+    }
+
+    // Скрытый спойлер
     &--active {
-        display: none;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 1220px) {
+    .spoiler {
+        width: 615px;
     }
 }

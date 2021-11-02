@@ -33,6 +33,10 @@ label {
     cursor: pointer;
 }
 
+.none {
+    display: none; //временный класс
+}
+
 .visually-hidden {
     position: absolute;
 
@@ -58,10 +62,32 @@ label {
     display: block;
     position: absolute;
     top: 0;
-    width: 345px;
+    left: 0;
+    width: 100%;
     height: 1px;
     background-color: #C4C4C4;
     margin: 0 auto;
+}
+
+.name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    &--mt {
+        margin-top: 20px;
+    }
+
+    &--mb {
+        margin-bottom: 40px;
+    }
+
+    &--pr {
+        padding-right: 100px;
+    }
 }
 
 .text {
