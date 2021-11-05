@@ -1,0 +1,44 @@
+.feedback {
+    &__wrapper {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    &__desc-block {
+        margin-bottom: 84px;
+    }
+
+    &__desc {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #828282;
+    }
+
+    &__title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+
+        margin-left: 70px;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__title:not(:last-child) {
+        margin-bottom: 67px;
+    }
+
+    &__title::before {
+        content: url(../../img/e-mail-dark.svg);
+        display: block;
+
+        position: absolute;
+        z-index: 5;
+    }
+}

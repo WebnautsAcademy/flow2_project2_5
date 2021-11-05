@@ -1,0 +1,28 @@
+.video {
+    &__wrapper {
+        padding-top: 50px;
+        padding-bottom: 110px;
+    }
+
+    &__block {
+        max-width: 270px;
+    }
+
+    &__name {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+    }
+}

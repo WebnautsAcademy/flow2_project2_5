@@ -70,7 +70,7 @@
 
     &__text-block {
         padding: 25px 0 5px 0;
-        height: auto;
+        max-height: 230px;
         transition: 0.3s;
     }
 
@@ -104,7 +104,7 @@
     // Скрытый спойлер
     &--active {
         padding: 0;
-        height: 0;
+        max-height: 0;
         overflow: hidden;
         transition: 0.3s;
     }
