@@ -24,6 +24,89 @@
 
     &__text {
         margin-top: 40px;
+        margin-bottom: 65px;
         max-width: 270px;
+    }
+
+    &__btn-block {
+        display: none;
+    }
+}
+
+@media (min-width: 1220px) {
+    .other {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__slider {
+            width: 50%;
+        }
+
+        &__name-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__name {
+            width: 282px;
+        }
+
+        &__text {
+            max-width: initial;
+        }
+
+        &__number {
+            display: initial;
+
+            font-family: 'Bebas Neue', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 96px;
+            line-height: 96px;
+            text-transform: uppercase;
+            color: #4F4F4F;
+        }
+
+        &__btn-block {
+            display: inline-block;
+        }
+
+        &__btn {
+            font-family: 'Bebas Neue', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+
+            color: #FFFFFF;
+
+            width: 85px;
+            height: 85px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid #fff;
+
+            transition: 0.2s;
+
+            &:last-child {
+                margin-left: 31px;
+            }
+
+            &:hover {
+                border: none;
+                background-color: #83c1fa;
+                transition: 0.3s;
+            }
+
+            &:active {
+                border: 1px solid #83c1fa;
+                color: #83c1fa;
+                background-color: transparent;
+                transition: 0.2s;
+            }
+        }
     }
 }

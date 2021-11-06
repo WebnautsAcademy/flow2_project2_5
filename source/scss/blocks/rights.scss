@@ -24,5 +24,27 @@
 
         padding-bottom: 4px;
         border-bottom: 1px solid #828282;
+
+        transition: 0.2s;
+    }
+}
+
+@media (min-width: 1220px) {
+    .rights {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__info {
+            margin-bottom: 0;
+        }
+
+        &__policy:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            transition: 0.2s;
+        }
     }
 }

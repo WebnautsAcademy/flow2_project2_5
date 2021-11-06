@@ -33,10 +33,10 @@
                         <a href="#about" class="nav__link">Обо мне</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Мои проекты</a>
+                        <a href="#projects" class="nav__link">Мои проекты</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Отзывы</a>
+                        <a href="#video" class="nav__link">Отзывы</a>
                     </li>
                 </ul>
                 <a class="nav__contact" href="tel:+89202523">
@@ -227,16 +227,22 @@
         <div class="other__wrapper wrapper wrapper--line">
             <h2 class="name name--mb">Другие проекты</h2>
             <div class="other__slider">
-                <div class="other__name-block">
-                    <div class="other__name">
-                        <svg class="other__veeam_logo" width="200" height="37">
-                            <use xlink:href="img/sprite.svg#veeam_logo"></use>
-                        </svg>
+                <div class="other__item">
+                    <div class="other__name-block">
+                        <div class="other__name">
+                            <svg class="other__veeam_logo" width="200" height="37">
+                                <use xlink:href="img/sprite.svg#veeam_logo"></use>
+                            </svg>
+                        </div>
+                        <p class="other__number">01</p>
                     </div>
-                    <p class="other__number">01</p>
+                    <p class="other__text text">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. <br> <br>
+                    По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. </p>
                 </div>
-                <p class="other__text text">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. <br> <br>
-                По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. </p>
+                <div class="other__btn-block">
+                    <button class="other__btn btn--prev">назад</button>
+                    <button class="other__btn btn--next">дальше</button>
+                </div>
             </div>
         </div>
     </section>
@@ -244,7 +250,7 @@
         <div class="video__wrapper wrapper wrapper--line">
             <h2 class="name name--mb">Видео отзывы</h2>
             <div class="video__block">
-                <video src=""></video>
+                <video class="video__play" src="img/willSmith.mp4" controls></video>
                 <p class="video__name">Уилл Смит</p>
                 <p class="video__desc">Актер, певец, классный мужик</p>
             </div>
@@ -256,11 +262,32 @@
                 <h2 class="name name--mb">Напишите мне</h2>
                 <p class="feedback__desc">Проконсультирую по любым вопросам, связанным с масштабированием бизнеса</p>
             </div>
-            <div class="feedback__contacts">
-                <p class="feedback__title feedback__title--mail">e-mail</p>
-                <p class="feedback__title feedback__title--fb">facebook</p>
-                <p class="feedback__title feedback__title--tg">telegram</p>
-            </div>
+            <ul class="feedback__contacts">
+                <li class="feedback__item">
+                    <a href="#" class="feedback__title feedback__title--mail">
+                        e-mail
+                        <svg class="feedback__arrow" width="29" height="29">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="feedback__item">
+                    <a href="#" class="feedback__title feedback__title--fb">
+                        facebook
+                        <svg class="feedback__arrow" width="29" height="29">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="feedback__item">
+                    <a href="#" class="feedback__title feedback__title--tg">
+                        telegram
+                        <svg class="feedback__arrow" width="29" height="29">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <section class="rights">
