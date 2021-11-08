@@ -36,3 +36,28 @@ spoilerHover.forEach(function(itemHover) {
 function itemHoverClick () {
     this.classList.toggle('spoiler--open')
 }
+
+
+// Свайпер
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    uniqueNavElements: true,
+    breakpoints: {
+        375: {
+            width: 270
+        },
+
+        1024: {
+            width: 585
+        }
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});

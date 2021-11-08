@@ -34,7 +34,7 @@ label {
 }
 
 .none {
-    display: none; //временный класс
+    display: none !important; //временный класс
 }
 
 .visually-hidden {
@@ -97,6 +97,53 @@ label {
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
+}
+
+.swiper-wrapper {
+    height: initial !important;
+}
+
+button.swiper-button-next::after,
+button.swiper-button-prev::after {
+    display: none;
+}
+
+button.swiper-button-prev,
+button.swiper-button-next {
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+
+    width: 85px;
+    height: 85px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+
+    transition: 0.2s;
+
+    position: initial;
+    top: initial;
+    margin-top: initial;
+    z-index: initial;
+    display: initial;
+    align-items: initial;
+    justify-content: initial;
+}
+
+button.swiper-button-next {
+    margin-left: 31px;
+}
+
+button.swiper-button-prev:hover,
+button.swiper-button-next:hover {
+    border: none;
+    background-color: #83c1fa;
+    transition: 0.3s;
 }
 
 @media (min-width: 1220px) {

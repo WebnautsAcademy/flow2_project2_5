@@ -7,4 +7,34 @@
     &__title {
         margin-bottom: 60px;
     }
+
+    &__btn-block {
+        display: none;
+    }
+}
+
+@media (min-width: 1220px) {
+    .projects {   
+        &__wrapper::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #C4C4C4;
+            margin: 0 auto;
+        }
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__btn-block {
+            display: initial;
+        }
+    }
 }
