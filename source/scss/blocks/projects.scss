@@ -15,6 +15,10 @@
 
 @media (min-width: 1220px) {
     .projects {   
+        &__wrapper {
+            padding-bottom: 220px;
+        }
+
         &__wrapper::before {
             content: '';
             display: block;
@@ -35,6 +39,10 @@
 
         &__btn-block {
             display: initial;
+        }
+
+        &__slider-block {
+            height: 645px;
         }
     }
 }
