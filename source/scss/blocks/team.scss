@@ -1,6 +1,10 @@
 .team {
     margin-bottom: 60px;
 
+    &__mobile {
+        display: initial;
+    }
+
     &__desktop {
         display: none;
     }

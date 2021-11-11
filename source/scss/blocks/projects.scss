@@ -13,10 +13,14 @@
     }
 }
 
+.swiper-wrapper {
+        display: initial;
+}
+
 @media (min-width: 1220px) {
     .projects {   
         &__wrapper {
-            padding-bottom: 220px;
+            overflow: hidden;
         }
 
         &__wrapper::before {
@@ -44,5 +48,9 @@
         &__slider-block {
             height: 645px;
         }
+    }
+
+    .swiper-wrapper {
+        display: flex;
     }
 }

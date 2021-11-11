@@ -44,15 +44,28 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 30,
-    uniqueNavElements: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
+
+// Свайпер для секции Проекты
+const swiperProjects = new Swiper('.swiper-projects', {
+    // Optional parameters
     breakpoints: {
-        375: {
-            width: 270
+        320: {
+            enabled: false,
         },
 
         1024: {
-            width: 585
-        }
+            enabled: true,
+            direction: 'horizontal',
+            loop: true,
+            spaceBetween: 100,
+        },
     },
   
     // Navigation arrows
@@ -60,4 +73,22 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+});
+
+// Свайпер для секции Проекты -> Команда
+const swiperTeam = new Swiper('.swiper-team', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    nested: true,
+});
+
+// Свайпер для секции Проекты -> Показатели
+const swiperGrowth = new Swiper('.swiper-growth', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    nested: true,
 });

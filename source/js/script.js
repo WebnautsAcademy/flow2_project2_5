@@ -1,9 +1,9 @@
 // Бургер меню
-var burger = document.querySelector('.header__burger')
-var nav = document.querySelector('.nav')
+let burger = document.querySelector('.header__burger');
+let nav = document.querySelector('.nav');
 
 // Анимация бургер иконки
-var closeNav = document.querySelector('.header__burger-line')
+let closeNav = document.querySelector('.header__burger-line');
 
 if (burger) {
     burger.addEventListener (
@@ -13,29 +13,29 @@ if (burger) {
             closeNav.classList.toggle('header__burger-x-icon')
         }
     )
-}
+};
 
 
 // Спойлер в секции "Основные специализации"
-var spoiler = document.querySelectorAll('.spoiler__name-block')
+let spoiler = document.querySelectorAll('.spoiler__name-block')
 
 spoiler.forEach(function(item) {
     item.addEventListener ('click', itemClick)
-})
+});
 
 function itemClick () {
     this.nextElementSibling.classList.toggle('spoiler--active')
-}
+};
 
-var spoilerHover = document.querySelectorAll('.spoiler__name-block')
+let spoilerHover = document.querySelectorAll('.spoiler__name-block')
 
 spoilerHover.forEach(function(itemHover) {
     itemHover.addEventListener ('click', itemHoverClick)
-})
+});
 
 function itemHoverClick () {
     this.classList.toggle('spoiler--open')
-}
+};
 
 
 // Свайпер
