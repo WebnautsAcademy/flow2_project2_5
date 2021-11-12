@@ -12,6 +12,10 @@
     &__description {
         margin-bottom: 40px;
     }
+
+    &__slider {
+        overflow: hidden;
+    }
 }
 
 @media (min-width: 1220px) {

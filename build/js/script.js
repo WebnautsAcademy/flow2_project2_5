@@ -38,49 +38,23 @@ function itemHoverClick () {
 }
 
 
-// Свайпер
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 30,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-});
-
 // Свайпер для секции Проекты
+if(document.documentElement.clientWidth >= 1220) {
 const swiperProjects = new Swiper('.swiper-projects', {
-    // Optional parameters
-    breakpoints: {
-        320: {
-            enabled: false,
-        },
-
-        1024: {
-            enabled: true,
-            direction: 'horizontal',
-            loop: true,
-            spaceBetween: 100,
-        },
-    },
-  
-    // Navigation arrows
+    direction: 'horizontal',
+    spaceBetween: 100,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-});
+})};
 
 // Свайпер для секции Проекты -> Команда
 const swiperTeam = new Swiper('.swiper-team', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
     spaceBetween: 30,
+    width: 280,
     nested: true,
 });
 
@@ -88,7 +62,26 @@ const swiperTeam = new Swiper('.swiper-team', {
 const swiperGrowth = new Swiper('.swiper-growth', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
     spaceBetween: 30,
     nested: true,
+});
+
+// Свайпер для секции Другие проекты
+const swiperOther = new Swiper('.swiper-other', {
+    direction: 'horizontal',
+    spaceBetween: 30,
+    breakpoints: {
+        375: {
+            width: 270,
+        },
+
+        1024: {
+            width: 585,
+        },
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
