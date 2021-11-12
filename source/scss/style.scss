@@ -1,31 +1,31 @@
 @import './fonts.scss';
-@import './variables.scss';
 @import './global.scss';
 
 @import './blocks/header.scss';
 @import './blocks/logo.scss';
 @import './blocks/nav.scss';
-@import './blocks/theme-toggle.scss';
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
+@import './blocks/welcome.scss';
+@import './blocks/welcome-title-container.scss';
 
-body,
-h1,
-h2,
-p {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+@import './blocks/about.scss';
+@import './blocks/about-name-container.scss';
+@import './blocks/about-text-container.scss';
 
-a {
-    text-decoration: none;
-}
+@import './blocks/special.scss';
+@import './blocks/spoiler.scss';
 
-ul, ol {
-    list-style: none;
-}
+@import './blocks/projects.scss';
+@import './blocks/about-project.scss';
+@import './blocks/results.scss';
+@import './blocks/growth.scss';
+@import './blocks/team.scss';
+@import './blocks/slider-number.scss';
+
+@import './blocks/other.scss';
+
+@import './blocks/video.scss';
+
+@import './blocks/feedback.scss';
+
+@import './blocks/rights.scss';

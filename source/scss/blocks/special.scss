@@ -1,0 +1,14 @@
+.special__wrapper {
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
+
+@media (min-width: 1220px) {
+    .special__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 30px;
+        padding-bottom: 220px;
+    }
+}

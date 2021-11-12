@@ -1,0 +1,13 @@
+.text__img {
+    margin-top: 40px;
+}
+
+@media (min-width: 1220px) {
+    .about-text-container {
+        flex-basis: 50%;
+    }
+    .text__img {
+        width: 615px;
+        height: 396px;
+    }
+}

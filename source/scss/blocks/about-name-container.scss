@@ -1,0 +1,42 @@
+.about-name-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.img--rotate {
+    position: relative;
+    width: 100px;
+    height: 135px;
+    transform: rotate(-15deg);
+    background-color: #C4C4C4;
+    overflow: hidden;
+    margin-right: 30px;
+    box-shadow: 3px 3px 0px 1px #83C1FA;
+}
+
+.name__img {
+    position: absolute;
+    top: -14px;
+    left: -23px;
+    width: 141px;
+    transform: rotate(15deg);
+}
+
+@media (min-width: 1220px) {
+    .about-name-container {
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+    .img--rotate {
+        width: 213px;
+        height: 281px;
+        margin: 190px 0 0 40px;
+        box-shadow: 6px 5px 0px 1px #83C1FA;
+    }
+    .name__img {
+        top: -30px;
+        left: -45px;
+        width: 295px;
+    }
+}

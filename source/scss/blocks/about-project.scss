@@ -1,0 +1,56 @@
+.about-project {
+    margin-bottom: 110px;
+
+    &__link {
+        display: flex;
+        align-items: flex-end;
+
+        margin-top: 30px;
+        transition: 0.2s;
+    }
+
+    &__link:hover &__link-icon {
+        fill: #83C1FA;
+        transition: 0.2s;
+    }
+
+    &__link:hover &__link-text {
+        color: #83C1FA;
+        transition: 0.2s;
+    }
+
+    &__link-icon {
+        fill: white;
+        margin-right: 15px;
+    }
+
+    &__link-text {
+        font-size: 16px;
+        line-height: 20px;
+
+        border-bottom: 1px solid #c4c4c42f;
+    }
+
+    &__img {
+        border: 8px solid #000;
+        border-radius: 30px;
+
+        margin-top: 42px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .about-project {
+        display: flex;
+
+        &__description {
+            flex-basis: 25%;
+            padding-right: 60px;
+        }
+
+        &__img {
+            flex-basis: 50%;
+            margin-top: 0;
+        }
+    }
+}

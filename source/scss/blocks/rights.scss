@@ -1,0 +1,50 @@
+.rights {
+    &__wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__info,
+    &__policy {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #828282;
+    }
+
+    &__info {
+        margin-bottom: 14px;
+    }
+
+    &__policy {
+        font-size: 14px;
+        line-height: 17px;
+
+        padding-bottom: 4px;
+        border-bottom: 1px solid #828282;
+
+        transition: 0.2s;
+    }
+}
+
+@media (min-width: 1220px) {
+    .rights {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__info {
+            margin-bottom: 0;
+        }
+
+        &__policy:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            transition: 0.2s;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.feedback {
+    &__wrapper {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    &__desc-block {
+        margin-bottom: 84px;
+    }
+
+    &__desc {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #828282;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 67px;
+    }
+
+    &__title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+
+        margin-left: 55px;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::before {
+            content: url(../../img/e-mail-dark.svg);
+            display: block;
+    
+            position: absolute;
+            top: -8px;
+            left: -50px;
+            z-index: -1;
+        }
+
+        &--fb::before {
+            content: url(../../img/facebook-dark.svg);
+            top: -16px;
+            left: -32px;
+        }
+
+        &--tg::before {
+            content: url(../../img/telegram-dark.svg);
+            left: -49px;
+        }
+    }
+
+    &__arrow {
+        margin-right: 10px;
+        fill: #4f4f4f;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 1220px) {
+    .feedback {
+        &__wrapper {
+            display: flex;
+        }
+
+        &__desc-block,
+        &__contacts {
+            flex-basis: 50%;
+        }
+
+        &__desc {
+            padding-right: 170px;
+        }
+
+        &__title {
+            padding-right: 20px;
+            transition: 0.3s;
+        
+            &:hover {
+                margin-left: 35px;
+                padding-right: 0;
+                color: #83c1fa;
+                transition: 0.3s;
+            }
+        }
+
+        &__title:hover &__arrow{
+            fill: #83c1fa;
+            transition: 0.3s;
+        }
+    }
+}

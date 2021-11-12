@@ -1,0 +1,55 @@
+.growth {
+    margin-bottom: 110px;
+
+    &__description {
+        margin-bottom: 40px;
+    }
+
+    &__slider {
+        display: none;
+    }
+}
+
+@media (min-width: 1220px) {
+    .growth {
+        height: 645px;
+        margin-bottom: initial;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__block {
+            display: flex;
+        }
+        
+        &__description {
+            flex-basis: 25%;
+            margin-bottom: initial;
+
+            & .text {
+                padding-right: 70px;
+            }
+        }
+
+        &__img {
+            flex-basis: 50%;
+        }
+
+        &__slider {
+            display: initial;
+            height: 200px;
+            overflow: hidden;
+
+            & img {
+                width: 292px;
+                height: 200px;
+            }
+        }
+
+        &__slide {
+            width: 322px !important;
+            margin: 0 15px !important;
+        }
+    }
+}

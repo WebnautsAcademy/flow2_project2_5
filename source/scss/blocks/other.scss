@@ -1,0 +1,84 @@
+.other {
+    &__wrapper {
+        padding-top: 50px;
+        padding-bottom: 110px;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 270px;
+        height: 113px;
+        border: 1px solid #7a7a7a;
+    }
+
+    &__veeam_logo {
+        fill: white;
+    }
+
+    &__number {
+        display: none;
+    }
+
+    &__text {
+        margin-top: 40px;
+        margin-bottom: 65px;
+    }
+
+    &__btn-block {
+        display: none;
+    }
+}
+
+@media (min-width: 1220px) {
+    .other {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__wrapper h2 {
+            flex-basis: 50%;
+        }
+
+        &__slider {
+            flex-basis: 50%;
+        }
+
+        &__name-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__name {
+            width: 282px;
+        }
+
+        &__text {
+            max-width: initial;
+        }
+
+        &__number {
+            display: initial;
+
+            font-family: 'Bebas Neue', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 96px;
+            line-height: 96px;
+            text-transform: uppercase;
+            color: #4F4F4F;
+        }
+
+        &__btn-block {
+            display: inline-block;
+        }
+    }
+}
