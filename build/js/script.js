@@ -1,9 +1,9 @@
 // Бургер меню
-var burger = document.querySelector('.header__burger')
-var nav = document.querySelector('.nav')
+let burger = document.querySelector('.header__burger')
+let nav = document.querySelector('.nav')
 
 // Анимация бургер иконки
-var closeNav = document.querySelector('.header__burger-line')
+let closeNav = document.querySelector('.header__burger-line')
 
 if (burger) {
     burger.addEventListener (
@@ -15,9 +15,22 @@ if (burger) {
     )
 }
 
+// Бургер ссылки
+let navLink = document.querySelectorAll('.nav__link')
+
+navLink.forEach(function(closeLink) {
+    closeLink.addEventListener ('click', closeLinkClick)
+})
+
+function closeLinkClick () {
+    nav.classList.add('nav--shown')
+    closeNav.classList.remove('header__burger-x-icon')
+}
+
+
 
 // Спойлер в секции "Основные специализации"
-var spoiler = document.querySelectorAll('.spoiler__name-block')
+let spoiler = document.querySelectorAll('.spoiler__name-block')
 
 spoiler.forEach(function(item) {
     item.addEventListener ('click', itemClick)
@@ -27,7 +40,7 @@ function itemClick () {
     this.nextElementSibling.classList.toggle('spoiler--active')
 }
 
-var spoilerHover = document.querySelectorAll('.spoiler__name-block')
+let spoilerHover = document.querySelectorAll('.spoiler__name-block')
 
 spoilerHover.forEach(function(itemHover) {
     itemHover.addEventListener ('click', itemHoverClick)
@@ -36,6 +49,10 @@ spoilerHover.forEach(function(itemHover) {
 function itemHoverClick () {
     this.classList.toggle('spoiler--open')
 }
+
+
+
+
 
 
 // Свайпер для секции Проекты
@@ -85,3 +102,11 @@ const swiperOther = new Swiper('.swiper-other', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+// Свайпер для секции Видео
+if(document.documentElement.clientWidth <= 768) {
+    const swiperVideo = new Swiper('.swiper-video', {
+        direction: 'horizontal',
+        spaceBetween: 50,
+        width: 270,
+    })};

@@ -2,15 +2,12 @@
     &__wrapper {
         padding-top: 50px;
         padding-bottom: 110px;
-    }
-
-    &__block {
-        max-width: 270px;
+        overflow: hidden;
     }
 
     &__play {
         width: 270px;
-        height: 174px;
+        height: 203px;
     }
 
     &__name {
@@ -29,7 +26,26 @@
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 24px;
         color: #828282;
+    }
+}
+
+@media (min-width: 1220px) {
+    .video {
+        &__block {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        &__slide {
+            width: initial;
+        }
+
+        &__play {
+            width: 370px;
+            height: 100%;
+        }
     }
 }

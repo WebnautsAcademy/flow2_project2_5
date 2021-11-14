@@ -342,12 +342,24 @@
         </div>
     </section>
     <section id="video" class="video">
-        <div class="video__wrapper wrapper wrapper--line">
+        <div class="video__wrapper wrapper wrapper--line swiper-video">
             <h2 class="name name--mb">Видео отзывы</h2>
-            <div class="video__block">
-                <video class="video__play" src="img/willSmith.mp4" controls></video>
-                <p class="video__name">Уилл Смит</p>
-                <p class="video__desc">Актер, певец, классный мужик</p>
+            <div class="video__block swiper-wrapper">
+                <div class="video__slide swiper-slide">
+                    <video class="video__play" src="img/wow.mp4" controls></video>
+                    <p class="video__name">Джон Смит</p>
+                    <p class="video__desc">Очень довольный клиент</p>
+                </div>
+                <div class="video__slide swiper-slide">
+                    <video class="video__play" src="img/boi.mp4" controls></video>
+                    <p class="video__name">Эйнсли Хэрриотт</p>
+                    <p class="video__desc">Английский повар и телеведущий</p>
+                </div>
+                <div class="video__slide swiper-slide">
+                    <video class="video__play" src="img/expert.mp4" controls></video>
+                    <p class="video__name">Дядя Ваня</p>
+                    <p class="video__desc">Обувщик</p>
+                </div>
             </div>
         </div>
     </section>
@@ -385,12 +397,12 @@
             </ul>
         </div>
     </section>
-    <section class="rights">
+    <footer class="rights">
         <div class="rights__wrapper wrapper">
             <p class="rights__info">2020. Все права защищены</p>
             <a href="#" class="rights__policy">Политика конфиденциальности</a>
         </div>
-    </section>
+    </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

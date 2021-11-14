@@ -1,3 +1,14 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #83C1FA;
+    --background-color: #000;
+}
+
+.body--light {
+    --primary-color: #000;
+    --background-color: #fff;
+}
+
 *,
 *::after,
 *::before {
