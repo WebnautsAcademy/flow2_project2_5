@@ -20,7 +20,7 @@
     }
 
     &__item:hover {
-        border: 1px solid #83C1FA;
+        border: 1px solid var(--secondary-color);
         transition: 0.2s;
     }
 
@@ -30,7 +30,7 @@
         font-weight: bold;
         font-size: 100px;
         line-height: 100px;
-        color: #FFFFFF;
+        color: var(--results-number);
     }
 
     &__number-text {

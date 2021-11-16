@@ -27,7 +27,7 @@
         font-weight: bold;
         font-size: 56px;
         line-height: 56px;
-        color: #FFFFFF;
+        color: var(--primary-color);
 
         margin-left: 55px;
         position: relative;
@@ -56,11 +56,23 @@
             content: url(../../img/telegram-dark.svg);
             left: -49px;
         }
+
+        &--mail-light::before {
+            content: url(../../img/e-mail-light.svg);
+        }
+
+        &--fb-light::before {
+            content: url(../../img/facebook-light.svg);
+        }
+
+        &--tg-light::before {
+            content: url(../../img/telegram-light.svg);
+        }
     }
 
     &__arrow {
         margin-right: 10px;
-        fill: #4f4f4f;
+        fill: var(--gray-color);
         transition: 0.3s;
     }
 }
@@ -87,13 +99,13 @@
             &:hover {
                 margin-left: 35px;
                 padding-right: 0;
-                color: #83c1fa;
+                color: var(--secondary-color);
                 transition: 0.3s;
             }
         }
 
         &__title:hover &__arrow{
-            fill: #83c1fa;
+            fill: var(--secondary-color);
             transition: 0.3s;
         }
     }

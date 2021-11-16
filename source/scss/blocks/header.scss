@@ -18,12 +18,12 @@
     }
 
     &__theme-icon {
-        fill: white;
+        fill: var(--primary-color);
         transition: 0.3s;
     }
     
     &__theme-icon:hover {
-        fill: yellow;
+        fill: var(--theme-icon-hover);
         transition: 0.3s;
     }
 
@@ -41,7 +41,7 @@
         display: block;
         width: 18px;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--primary-color);
 
         position: absolute;
         top: 50%;
@@ -54,7 +54,7 @@
         display: block;
         width: 26px;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--primary-color);
         transform: translateY(-8px);
         transition: 0.3s;
     }

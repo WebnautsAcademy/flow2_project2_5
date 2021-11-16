@@ -29,6 +29,27 @@ function closeLinkClick () {
 
 
 
+// Переключение светлой/тёмной темы
+let themeToggler = document.querySelector('.header__theme-toggler')
+let body = document.querySelector('body')
+let iconMail = document.querySelector('.feedback__title--mail')
+let iconFb = document.querySelector('.feedback__title--fb')
+let iconTg = document.querySelector('.feedback__title--tg')
+
+if (themeToggler) {
+    themeToggler.addEventListener (
+        'click',
+        function () {
+            body.classList.toggle('body--light')
+            iconMail.classList.toggle('feedback__title--mail-light')
+            iconFb.classList.toggle('feedback__title--fb-light')
+            iconTg.classList.toggle('feedback__title--tg-light')
+        }
+    )
+}
+
+
+
 // Спойлер в секции "Основные специализации"
 let spoiler = document.querySelectorAll('.spoiler__name-block')
 

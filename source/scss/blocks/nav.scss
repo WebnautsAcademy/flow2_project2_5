@@ -30,7 +30,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: var(--primary-color);
     }
 
     &__contact-btn {
@@ -39,7 +39,7 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: var(--primary-color);
 
         display: flex;
         justify-content: center;
@@ -48,7 +48,7 @@
         width: 240px;
         height: 65px;
 
-        border: 1px solid #83C1FA;
+        border: 1px solid var(--secondary-color);
         border-radius: 60px;
     }
 
@@ -90,7 +90,7 @@
         }
 
         &__link:hover {
-            border: 2px solid #83C1FA;
+            border: 2px solid var(--secondary-color);
             border-radius: 50%;
             transition: 0.2s;
         }
@@ -98,12 +98,12 @@
         &__contact-btn {
             width: 263px;
             height: 65px;
-            border: 2px solid #83C1FA;
+            border: 2px solid var(--secondary-color);
             transition: 0.2s;
         }
 
         &__contact-btn:hover {
-            background-color: #83C1FA;
+            background-color: var(--secondary-color);
             transition: 0.2s;
         }
 

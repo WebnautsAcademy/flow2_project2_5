@@ -30,14 +30,14 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
-        color: #fff;
+        color: var(--primary-color);
         transition: 0.3s;
     }
 
     &__arrow {
         width: 30px;
         height: 30px;
-        background-color: #3b3b3b;
+        background-color: var(--spoiler-arrow);
         border-radius: 50%;
         position: relative;
     }
@@ -48,7 +48,7 @@
         display: block;
         width: 9px;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--primary-color);
 
         position: absolute;
         top: 50%;
@@ -76,12 +76,12 @@
 
     // Стили для активного спойлера
     &--open {
-        border-bottom: 1px solid #83C1FA;
+        border-bottom: 1px solid var(--secondary-color);
         transition: 0.3s;
     }
 
     &--open p {
-        color: #83C1FA;
+        color: var(--secondary-color);
         transition: 0.3s;
     }
 
@@ -90,13 +90,13 @@
     }
 
     &--open div::after {
-        background-color: #83C1FA;
+        background-color: var(--secondary-color);
         transform: rotate(45deg);
         transition: 0.3s;
     }
 
     &--open div::before {
-        background-color: #83C1FA;
+        background-color: var(--secondary-color);
         transform: rotate(-45deg);
         transition: 0.3s;
     }
