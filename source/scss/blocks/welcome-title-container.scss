@@ -56,6 +56,38 @@
     left: -165px;
 }
 
+@media (min-width: 768px) {
+    .title {
+        font-size: 110px;
+        line-height: 100px;
+
+        &--stroke {
+            font-size: 110px;
+            line-height: 100px;
+        }
+    }
+
+    .welcome-img {
+        width: 350px;
+    }
+
+    .welcome-title-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .welcome-text::before {
+        width: 150px;
+        left: 0;
+    }
+
+    .welcome-text {
+        margin-left: 0;
+        padding-left: 160px;
+        padding-right: 50px;
+    }
+}
+
 @media (min-width: 1220px) {
     .title {
         font-size: 190px;
@@ -71,19 +103,14 @@
         }
     }
 
-    .welcome-title-container {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
     .welcome-text::before {
         width: 253px;
-        left: 0;
     }
+
     .welcome-text {
-        margin-left: 0;
         padding-left: 280px;
-        padding-right: 50px;
     }
+
     .welcome-img {
         width: 608px;
         margin-bottom: 0;

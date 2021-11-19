@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <title>FRO | app</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a href="#" class="logo">
+                <svg class="logo__fro" width="27" height="12">
+                    <use xlink:href="img/sprite.svg#logo-fro"></use>
+                </svg>
+                <svg class="logo__heart" width="12" height="12">
+                    <use xlink:href="img/sprite.svg#logo-heart"></use>
+                </svg>
+            </a>
+            <button class="header__theme-toggler">
+                <span class="visually-hidden">Переключить тему</span>
+                <svg class="header__theme-icon" width="22" height="22">
+                    <use xlink:href="img/sprite.svg#theme-toggler"></use>
+                </svg>
+            </button>
+            <button class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="visually-hidden">Меню</span>
+            </button>
+            <nav class="nav nav--shown">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Обо мне</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Мои проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#video" class="nav__link">Отзывы</a>
+                    </li>
+                </ul>
+                <a class="nav__contact" href="tel:+89202523">
+                    <div class="btn">Связаться со мной</div>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="app">
+        <div class="app__wrapper wrapper">
+            <p class="app__text">спасибо за заявку</p>
+            <p class="app__info text">В ближайшем времени я обязательно свяжусь с вами.</p>
+            <button class="app__btn btn">отправить</button>
+        </div>
+    </main>
+    <footer class="rights">
+        <div class="rights__wrapper wrapper">
+            <p class="rights__info">2020. Все права защищены</p>
+            <a href="#" class="rights__policy">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

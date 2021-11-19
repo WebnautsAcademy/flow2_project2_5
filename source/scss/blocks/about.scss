@@ -28,17 +28,17 @@
 //     white-space: nowrap;
 // }
 
-@media (min-width: 1220px) {
+@media (min-width: 768px) {
     .about__wrapper {
         display: flex;
         padding-bottom: 220px;
     }
-    .about-text-bg {
-        bottom: 125px;
-        left: -450px;
-    }
-    .about-text-bg__item {
-        font-size: 72px;
-        line-height: 86px;
-    }
+    // .about-text-bg {
+    //     bottom: 125px;
+    //     left: -450px;
+    // }
+    // .about-text-bg__item {
+    //     font-size: 72px;
+    //     line-height: 86px;
+    // }
 }

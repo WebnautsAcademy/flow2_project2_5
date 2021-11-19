@@ -42,6 +42,19 @@
     }
 }
 
+@media (min-width: 768px) {
+    .results {
+        &__grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            flex-basis: 50%;
+        }
+    }
+}
+
 @media (min-width: 1220px) {
     .results {
         display: flex;
@@ -55,12 +68,6 @@
         }
 
         &__grid {
-            flex-basis: 50%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        &__item {
             flex-basis: 50%;
         }
     }

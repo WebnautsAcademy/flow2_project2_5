@@ -1,0 +1,66 @@
+.mail {
+    &__wrapper {
+        padding-top: 110px;
+        padding-bottom: 220px;
+    }
+
+    &__block {
+        position: relative;
+    }
+    
+    &__text {
+        font-family: 'Bebas Neue', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 144px;
+        line-height: 162px;
+        text-transform: uppercase;
+        color: var(--primary-color);
+
+        &--hello {
+            margin-left: 280px;
+            color: var(--secondary-color);
+        }
+    }
+
+    &__input {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #828282;
+        text-align: center;
+
+        background-color: transparent;
+        border-bottom: 1px solid var(--gray-color);
+
+        height: 55px;
+
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+
+        &--name {
+            width: 603px;
+        }
+
+        &--mail {
+            width: 383px;
+        }
+
+        &--message {
+            width: 413px;
+        }
+
+        &:focus {
+            color: #fff;
+            border-bottom: 1px solid #83C1FA;
+        }
+    }
+
+    &__btn {
+        margin-top: 80px;
+        margin-left: 280px;
+    }
+}

@@ -31,16 +31,20 @@
     }
 }
 
+@media (min-width: 768px) {
+    .video {
+        &__slide {
+            width: initial;
+        }
+    }
+}
+
 @media (min-width: 1220px) {
     .video {
         &__block {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-        }
-
-        &__slide {
-            width: initial;
         }
 
         &__play {

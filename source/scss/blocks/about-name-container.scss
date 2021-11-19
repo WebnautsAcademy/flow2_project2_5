@@ -23,20 +23,32 @@
     transform: rotate(15deg);
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 768px) {
     .about-name-container {
         flex-direction: column;
         flex-basis: 50%;
     }
     .img--rotate {
-        width: 213px;
-        height: 281px;
-        margin: 190px 0 0 40px;
+        width: 163px;
+        height: 231px;
+        margin-left: 35px;
         box-shadow: 6px 5px 0px 1px var(--secondary-color);
     }
     .name__img {
         top: -30px;
         left: -45px;
+        width: 245px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .img--rotate {
+        width: 213px;
+        height: 281px;
+        margin: 190px 0 0 40px;
+    }
+
+    .name__img {
         width: 295px;
     }
 }
