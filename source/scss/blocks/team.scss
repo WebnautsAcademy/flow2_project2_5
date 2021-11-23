@@ -12,9 +12,13 @@
     &__description {
         margin-bottom: 40px;
     }
+
+    &__slider {
+        overflow: hidden;
+    }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 768px) {
     .team {
         &__mobile {
             display: none;
@@ -22,9 +26,33 @@
 
         &__desktop {
             display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        &__description {
+            &--item {
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+        }
+    }
+}
+
+@media (min-width: 1220px) {
+    .team {
+        &__desktop {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-column-gap: 30px;
             grid-row-gap: 100px;
+        }
+
+        &__description {
+            &--item {
+                grid-column-start: initial;
+                grid-column-end: initial;
+            }
         }
     }
 }

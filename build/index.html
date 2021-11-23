@@ -21,7 +21,7 @@
             <button class="header__theme-toggler">
                 <span class="visually-hidden">Переключить тему</span>
                 <svg class="header__theme-icon" width="22" height="22">
-                    <use xlink:href="img/sprite.svg#theme-toggler"></use>
+                    <use class="header__theme-icon--change" xlink:href="img/sprite.svg#theme-toggler-sun"></use>
                 </svg>
             </button>
             <button class="header__burger">
@@ -41,7 +41,7 @@
                     </li>
                 </ul>
                 <a class="nav__contact" href="tel:+89202523">
-                    <div class="nav__contact-btn">Связаться со мной</div>
+                    <div class="btn">Связаться со мной</div>
                 </a>
             </nav>
         </div>
@@ -250,8 +250,7 @@
                         <div class="slider-number">4</div>
                         <div class="team__description">
                             <h2 class="name name--mb name--pr">наша команда</h2>
-                            <p class="text">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. <br><br>
-                                По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз.</p>
+                            <p class="text">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз.</p>
                         </div>
                         <div class="team__slider swiper-team">
                             <div class="team__slide-wrapper swiper-wrapper">
@@ -278,7 +277,7 @@
                     </div>
                     <div class="team__desktop">
                         <div class="slider-number">4</div>
-                        <div class="team__description">
+                        <div class="team__description team__description--item">
                             <h2 class="name name--mb name--pr">наша команда</h2>
                             <p class="text">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует генезис.</p>
                         </div>
@@ -296,7 +295,7 @@
     <section class="other">
         <div class="other__wrapper wrapper wrapper--line">
             <h2 class="name name--mb">Другие проекты</h2>
-            <div class="other__slider swiper">
+            <div class="other__slider swiper-other">
                 <div class="other__slider-wrapper swiper-wrapper">
                     <div class="other__item swiper-slide">
                         <div class="other__name-block">
@@ -343,12 +342,24 @@
         </div>
     </section>
     <section id="video" class="video">
-        <div class="video__wrapper wrapper wrapper--line">
+        <div class="video__wrapper wrapper wrapper--line swiper-video">
             <h2 class="name name--mb">Видео отзывы</h2>
-            <div class="video__block">
-                <video class="video__play" src="img/willSmith.mp4" controls></video>
-                <p class="video__name">Уилл Смит</p>
-                <p class="video__desc">Актер, певец, классный мужик</p>
+            <div class="video__block swiper-wrapper">
+                <div class="video__slide swiper-slide">
+                    <video class="video__play" src="img/wow.mp4" controls></video>
+                    <p class="video__name">Джон Смит</p>
+                    <p class="video__desc">Очень довольный клиент</p>
+                </div>
+                <div class="video__slide swiper-slide">
+                    <video class="video__play" src="img/boi.mp4" controls></video>
+                    <p class="video__name">Эйнсли Хэрриотт</p>
+                    <p class="video__desc">Английский повар и телеведущий</p>
+                </div>
+                <div class="video__slide swiper-slide">
+                    <video class="video__play" src="img/expert.mp4" controls></video>
+                    <p class="video__name">Дядя Ваня</p>
+                    <p class="video__desc">Обувщик</p>
+                </div>
             </div>
         </div>
     </section>
@@ -360,7 +371,7 @@
             </div>
             <ul class="feedback__contacts">
                 <li class="feedback__item">
-                    <a href="#" class="feedback__title feedback__title--mail">
+                    <a href="mail.html" class="feedback__title feedback__title--mail">
                         e-mail
                         <svg class="feedback__arrow" width="29" height="29">
                             <use xlink:href="img/sprite.svg#arrow"></use>
@@ -386,12 +397,12 @@
             </ul>
         </div>
     </section>
-    <section class="rights">
+    <footer class="rights">
         <div class="rights__wrapper wrapper">
             <p class="rights__info">2020. Все права защищены</p>
             <a href="#" class="rights__policy">Политика конфиденциальности</a>
         </div>
-    </section>
+    </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

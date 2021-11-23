@@ -10,17 +10,17 @@
     }
 
     &__link:hover &__link-icon {
-        fill: #83C1FA;
+        fill: var(--secondary-color);
         transition: 0.2s;
     }
 
     &__link:hover &__link-text {
-        color: #83C1FA;
+        color: var(--secondary-color);
         transition: 0.2s;
     }
 
     &__link-icon {
-        fill: white;
+        fill: var(--primary-color);
         margin-right: 15px;
     }
 
@@ -32,7 +32,7 @@
     }
 
     &__img {
-        border: 8px solid #000;
+        border: 8px solid var(--img-frame);
         border-radius: 30px;
 
         margin-top: 42px;

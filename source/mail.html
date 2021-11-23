@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <title>FRO | mail</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a href="index.html" class="logo">
+                <svg class="logo__fro" width="27" height="12">
+                    <use xlink:href="img/sprite.svg#logo-fro"></use>
+                </svg>
+                <svg class="logo__heart" width="12" height="12">
+                    <use xlink:href="img/sprite.svg#logo-heart"></use>
+                </svg>
+            </a>
+            <button class="header__theme-toggler">
+                <span class="visually-hidden">Переключить тему</span>
+                <svg class="header__theme-icon" width="22" height="22">
+                    <use class="header__theme-icon--change" xlink:href="img/sprite.svg#theme-toggler-sun"></use>
+                </svg>
+            </button>
+            <button class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="visually-hidden">Меню</span>
+            </button>
+            <nav class="nav nav--shown">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">Обо мне</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#projects" class="nav__link">Мои проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#video" class="nav__link">Отзывы</a>
+                    </li>
+                </ul>
+                <a class="nav__contact" href="tel:+89202523">
+                    <div class="btn">Связаться со мной</div>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="mail">
+        <div class="mail__wrapper wrapper">
+            <p class="mail__text mail__text--hello">привет,</p>
+            <div class="mail__block">
+                <p class="mail__text">меня зовут</p>
+                <input type="text" placeholder="Введите ваше имя" class="mail__input mail__input--name">
+            </div>
+            <div class="mail__block">
+                <p class="mail__text">и вот моя почта</p>
+                <input type="mail" placeholder="Введите вашу почту" class="mail__input mail__input--mail">
+            </div>
+            <div class="mail__block">
+                <p class="mail__text">я хочу сказать</p>
+                <input type="text" placeholder="Введите ваше сообщение" class="mail__input mail__input--message">
+            </div>
+            <a href="app.html" class="mail__link">
+                <button class="mail__btn btn">отправить</button>
+            </a>
+        </div>
+    </main>
+    <footer class="rights">
+        <div class="rights__wrapper wrapper">
+            <p class="rights__info">2020. Все права защищены</p>
+            <a href="#" class="rights__policy">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

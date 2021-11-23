@@ -8,37 +8,37 @@
     padding-bottom: 255px;
 }
 
-.about-text-bg {
-    position: absolute;
-    bottom: 104px;
-    left: -230px;
-    overflow: hidden;
-}
+// .about-text-bg {
+//     position: absolute;
+//     bottom: 104px;
+//     left: -230px;
+//     overflow: hidden;
+// }
 
-.about-text-bg__item {
-    font-family: 'Bebas Neue', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 58px;
-    text-transform: uppercase;
-    color: #585858;
-    opacity: 0.5;
+// .about-text-bg__item {
+//     font-family: 'Bebas Neue', sans-serif;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 48px;
+//     line-height: 58px;
+//     text-transform: uppercase;
+//     color: #585858;
+//     opacity: 0.5;
 
-    white-space: nowrap;
-}
+//     white-space: nowrap;
+// }
 
-@media (min-width: 1220px) {
+@media (min-width: 768px) {
     .about__wrapper {
         display: flex;
         padding-bottom: 220px;
     }
-    .about-text-bg {
-        bottom: 125px;
-        left: -450px;
-    }
-    .about-text-bg__item {
-        font-size: 72px;
-        line-height: 86px;
-    }
+    // .about-text-bg {
+    //     bottom: 125px;
+    //     left: -450px;
+    // }
+    // .about-text-bg__item {
+    //     font-size: 72px;
+    //     line-height: 86px;
+    // }
 }

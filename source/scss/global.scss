@@ -8,8 +8,9 @@
 }
 
 body {
+    cursor: url(../img/cursor.png) 12 12, auto;
     min-width: 320px;
-    background-color: #262626;
+    background-color: var(--background-color);
     font-style: normal;
     font-weight: normal;
 }
@@ -30,7 +31,11 @@ img {
 a,
 button,
 label {
-    cursor: pointer;
+    cursor: url(../img/cursor-hover.png) 16 16, auto !important;
+}
+
+input {
+    outline:none;
 }
 
 .none {
@@ -74,7 +79,7 @@ label {
     font-weight: normal;
     font-size: 36px;
     line-height: 43px;
-    color: #FFFFFF;
+    color: var(--primary-color);
     text-transform: uppercase;
 
     &--mt {
@@ -96,7 +101,7 @@ label {
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: var(--primary-color);
 }
 
 .swiper-wrapper {
@@ -116,13 +121,13 @@ button.swiper-button-next {
     font-size: 18px;
     line-height: 22px;
 
-    color: #FFFFFF;
+    color: var(--primary-color);
 
     width: 85px;
     height: 85px;
     background-color: transparent;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 1px solid var(--primary-color);
 
     transition: 0.2s;
 
@@ -142,8 +147,43 @@ button.swiper-button-next {
 button.swiper-button-prev:hover,
 button.swiper-button-next:hover {
     border: none;
-    background-color: #83c1fa;
+    background-color: var(--secondary-color);
     transition: 0.3s;
+}
+
+.btn {
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: transparent;
+    color: var(--primary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 240px;
+    height: 65px;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 60px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .wrapper {
+        min-width: 765px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .wrapper--line::before {
+        width: 765px;
+    }
 }
 
 @media (min-width: 1220px) {
@@ -152,10 +192,24 @@ button.swiper-button-next:hover {
         padding: 0 15px;
         margin: 0 auto;
     }
+
     .wrapper--line::before {
         width: 1200px;
     }
+
     .text {
         line-height: 24px;
+    }
+
+    .btn {
+        width: 263px;
+        height: 65px;
+        border: 2px solid var(--secondary-color);
+        transition: 0.2s;
+    }
+    
+    .btn:hover {
+        background-color: var(--secondary-color);
+        transition: 0.2s;
     }
 }

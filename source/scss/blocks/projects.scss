@@ -11,10 +11,10 @@
     &__btn-block {
         display: none;
     }
-}
 
-.swiper-wrapper {
+    &__slider-block {
         display: initial;
+    }
 }
 
 @media (min-width: 1220px) {

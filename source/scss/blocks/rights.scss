@@ -42,8 +42,8 @@
         }
 
         &__policy:hover {
-            color: #fff;
-            border-bottom: 1px solid #fff;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
             transition: 0.2s;
         }
     }

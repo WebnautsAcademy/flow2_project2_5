@@ -2,12 +2,18 @@
     margin-top: 40px;
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 768px) {
     .about-text-container {
         flex-basis: 50%;
     }
     .text__img {
+        width: 450px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1220px) {
+    .text__img {
         width: 615px;
-        height: 396px;
     }
 }
