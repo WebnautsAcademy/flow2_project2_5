@@ -8,6 +8,7 @@
 }
 
 body {
+    cursor: url(../img/cursor.png) 12 12, auto;
     min-width: 320px;
     background-color: var(--background-color);
     font-style: normal;
@@ -30,7 +31,7 @@ img {
 a,
 button,
 label {
-    cursor: pointer;
+    cursor: url(../img/cursor-hover.png) 16 16, auto !important;
 }
 
 input {

@@ -36,11 +36,22 @@ let iconMail = document.querySelector('.feedback__title--mail')
 let iconFb = document.querySelector('.feedback__title--fb')
 let iconTg = document.querySelector('.feedback__title--tg')
 
+let themeIcon = document.querySelector('.header__theme-icon--change')
+
 if (themeToggler) {
     themeToggler.addEventListener (
         'click',
         function () {
             body.classList.toggle('body--light')
+
+            let themeIconAttr = themeIcon.getAttribute('xlink:href')
+            if (themeIconAttr.includes('sun')) {
+                themeIcon.setAttribute('xlink:href', 'img/sprite.svg#theme-toggler-moon')
+            }
+            if (themeIconAttr.includes('moon')) {
+                themeIcon.setAttribute('xlink:href', 'img/sprite.svg#theme-toggler-sun')
+            }
+
             iconMail.classList.toggle('feedback__title--mail-light')
             iconFb.classList.toggle('feedback__title--fb-light')
             iconTg.classList.toggle('feedback__title--tg-light')

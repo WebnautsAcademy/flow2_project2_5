@@ -20,7 +20,7 @@
             <button class="header__theme-toggler">
                 <span class="visually-hidden">Переключить тему</span>
                 <svg class="header__theme-icon" width="22" height="22">
-                    <use xlink:href="img/sprite.svg#theme-toggler"></use>
+                    <use class="header__theme-icon--change" xlink:href="img/sprite.svg#theme-toggler-sun"></use>
                 </svg>
             </button>
             <button class="header__burger">
@@ -60,7 +60,9 @@
                 <p class="mail__text">я хочу сказать</p>
                 <input type="text" placeholder="Введите ваше сообщение" class="mail__input mail__input--message">
             </div>
-            <button class="mail__btn btn">отправить</button>
+            <a href="app.html" class="mail__link">
+                <button class="mail__btn btn">отправить</button>
+            </a>
         </div>
     </main>
     <footer class="rights">

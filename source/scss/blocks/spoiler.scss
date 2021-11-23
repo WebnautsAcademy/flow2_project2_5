@@ -1,6 +1,6 @@
 .spoiler {
     &__name-block {
-        cursor: pointer;
+        cursor: url(../img/cursor-hover.png) 16 16, auto;
         width: 100%;
         height: 60px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
